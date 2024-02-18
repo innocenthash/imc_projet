@@ -1,0 +1,158 @@
+*, ::before , ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: clamp(20px,5vw, 100px) 50px 50px;
+    /* background-image:linear-gradient(to bottom right,rgba(51, 166, 95, 0.351),rgba(114, 24, 199, 0.504)); */
+background-color: rgba(255, 255, 255, 0.31);
+}
+.container{
+    background-color: white;
+    max-width: 700px;
+   
+    border: 1px solid rgba(128, 128, 128, 0.285);
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.182) ;
+}
+h1{
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+}
+
+h1 span {
+    font-weight: 700;
+}
+
+.container-inputs {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+
+.container-inputs label {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.container-inputs input {
+    padding: 10px;
+    max-width: 350px;
+   font-size: 18px;
+    
+    border: none;
+    border-bottom: 1px solid gray;
+box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.381) ;
+border-radius: 10px;
+}
+.container-inputs input:focus {
+    outline: 1px solid rgba(128, 128, 128, 0.221);
+}
+.input-group :nth-child(2){
+    margin-left: 5px;
+}
+form button {
+font-size: 20px;
+min-width: 200px;
+display: block;
+padding: 5px;
+border: none;
+border-radius: 5px;
+margin: 20px auto;
+color: white;
+background-color: rgb(101, 74, 255);
+cursor: pointer;
+box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.381) ;
+
+}
+form button:hover {
+    background-color:rgb(69, 52, 170) ;
+}
+
+.infos{
+    text-align: center;
+}
+.valeur-resultat{
+    font-size: 30px;
+}
+.alert-resultat{
+    margin-bottom: 20px;
+}
+@media(max-width:700px){
+   .container {
+    max-width: 500px;
+   }
+   .container-inputs {
+   
+   flex-direction: column;
+   align-items: center;
+  
+   margin: 0px;
+   
+}
+.container-inputs input {
+   
+   margin: 0;
+}
+
+form button {
+    font-size: 15px;
+    min-width: 100px;
+    
+    
+    }
+    h1{
+       font-size: 20px;
+    }
+    
+    h5{
+        font-size: 10px;
+        color: gray;
+    }
+    .input-group :nth-child(2){
+        margin-left: 0px;
+    }
+
+}
+@media(max-width:500px){
+    .container {
+     max-width: 400px ;
+    }
+    .container-inputs {
+    
+    flex-direction: column;
+    align-items: center;
+   
+    margin: 0px;
+    
+ }
+ .container-inputs input {
+    width: 100%;
+    min-width: auto;
+    margin: 0;
+ }
+ 
+ form button {
+     font-size: 15px;
+     min-width: 100px;
+     
+     
+     }
+     h1{
+        font-size: 20px;
+     }
+     
+     h5{
+         font-size: 10px;
+         color: gray;
+     }
+ 
+ }
